@@ -1,0 +1,135 @@
+.navbar__menu{
+	width: 20%;
+	text-align: right;
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-color: #222628;
+	height: 100%;
+	box-sizing: border-box;
+}
+
+.navbar__menu li{
+	display: block;
+	cursor: pointer;
+	
+}
+.navbar__menu li a{
+	color: rgba(255, 255, 255, 0.5);
+	margin: 0 10px;
+	font-size: 18px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navbar_menu .active{
+	background-color: rgba(0, 0, 0, 0.15);
+}
+.navbar__menu li a span{
+	line-height: 3.5em;
+}
+
+.nav-menu li a:active {
+	color: rgb(255, 255, 255);
+}
+.navbar__btn-toggle{
+	display: none;
+}
+/* Для стилизации пункта активной страницы в навигации*/
+.active-page{
+	background-color: rgba(0, 0, 0, 0.15);
+}
+.active-page .navbar__menu-item{
+	color: #ffffff;
+}
+.active-page .fa{
+	color: #ffffff;
+	color: #e27689;
+}
+/******************************************************/
+
+.navbar__menu-item{
+	margin-right: 20px;
+}
+
+@media(max-width: 1250px){
+	.navbar__menu-item{
+		margin-right: 10px;
+	}
+	.navbar__menu li a{
+		font-size: 16px;
+	}
+}
+
+@media(max-width: 950px){
+	body{
+		padding-left: 0;
+	}
+	.navbar__menu{
+		display: none;
+	}
+	.navbar__menu.open-menu{
+		display: block;
+		position: fixed;
+		overflow: auto;
+		top: 10%;
+		left: 0;
+		box-shadow: #ccc;
+		width: 100%;
+		box-shadow: 0 4px 2px -2px rgba(36, 36, 36, 0.17);
+	}
+	.navbar__menu li a{
+		font-size: 1.8em;
+	}
+	.navbar__menu li a .fa{
+		display: none;
+	}
+
+	.navbar__menu-item{
+		width: 100%;
+		text-align: center;
+	}
+
+    .navbar__btn-toggle{
+		position: fixed;
+		top: 20px;
+		left: 20px;;
+        width: 40px;
+        height: 35px;
+        display: block;
+        margin-left: 10px;
+	}
+	.navbar__btn-toggle span, .navbar__btn-toggle:after, .navbar__btn-toggle:before{
+		height: 3px;
+		width: 100%;
+		position: absolute;
+		background: #000000;
+		margin: 0 auto;
+	}
+	.navbar__btn-toggle span{
+		top: 16px;
+	}
+	.navbar__btn-toggle:after, .navbar__btn-toggle:before{
+		content: '';
+	}
+	.navbar__btn-toggle:after{
+		bottom: 5px;
+	}
+	.navbar__btn-toggle:before{
+		top: 5px;
+	}
+	.navbar__btn-toggle.open-menu span {
+		opacity:0; 
+		transition: 0.5s; 
+	}
+	.navbar__btn-toggle.open-menu:before {
+		transform: rotate(38deg);
+		top: 16px;
+		transition: 0.4s;
+	}
+	.navbar__btn-toggle.open-menu:after {
+		transform: rotate(-38deg);
+		bottom: 16px;
+		transition: 0.4s;
+	}
+}

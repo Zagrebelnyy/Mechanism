@@ -1,0 +1,16 @@
+.admin-panel{
+    color:#424856;
+}
+.admin-panel .container{
+    max-width: 660px;
+}
+.admin-panel .container form div h2{
+    text-align: left;
+}
+.admin-panel .container div{
+    margin-bottom: 30px;
+}
+.admin-panel input, .admin-panel textarea{
+    padding: 15px;
+    margin: 20px 0;
+}

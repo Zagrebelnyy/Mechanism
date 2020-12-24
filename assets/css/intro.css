@@ -1,0 +1,17 @@
+.intro-body{
+    min-height: 70vh;
+}
+.intro-container{
+    padding: 40px 90px;
+    color:#424856;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+.intro-header__title{
+    font-size: 1em;
+}
+.intro-body__text{
+    line-height: 1.9em;
+    margin-top: 40px;
+    margin-left: 20px;
+}
